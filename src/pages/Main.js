@@ -11,6 +11,7 @@ const Main = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const {currentUser} = useContext(AuthContext);
+  console.log(currentUser);
 
   useEffect(() => {
     getMovies(FEATURED_API);
