@@ -35,7 +35,7 @@ export const createUser = async (email, password, navigate, displayName) => {
     {
       displayName: displayName,
     });
-    navigate("/");
+    navigate("Firebase-Movie-App/");
   } catch (err) {
     alert(err.message);
   }
@@ -45,7 +45,7 @@ export const signInUser = async (email, password, navigate) => {
   try {
     let signIn = await signInWithEmailAndPassword(auth, email, password);
     console.log(signIn);
-    navigate("/");
+    navigate("Firebase-Movie-App/");
   } catch (err) {
     alert(err.message);
   }
@@ -69,7 +69,7 @@ export const signUpProvider = (navigate) => {
   signInWithPopup(auth, provider)
   .then((result) => {
     console.log(result);
-    navigate("/");
+    navigate("Firebase-Movie-App/");
   }).catch((error) => {
    alert(error.message);
   });

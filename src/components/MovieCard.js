@@ -10,7 +10,7 @@ const MovieCard = ({ title, poster_path, overview, vote_average, id }) => {
     const {currentUser} = useContext(AuthContext); 
     let navigate = useNavigate();
   return (
-    <div className="movie" onClick={()=> currentUser ? navigate("details/"+id):alert("Please log in to see the details.")}>
+    <div className="movie" onClick={()=> currentUser ? navigate("Firebase-Movie-App/details/"+id):alert("Please log in to see the details.")}>
       <img src={poster_path ? IMG_API + poster_path : defaultImage} alt="" />
       <div className="d-flex align-items-baseline justify-content-between p-1 text-white">
         <h5>{title}</h5>

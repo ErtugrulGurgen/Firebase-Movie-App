@@ -14,7 +14,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <Link to={"/"} className="navbar-brand text-white">
+          <Link to={"Firebase-Movie-App/"} className="navbar-brand text-white">
             <h4>React Movie App</h4>
           </Link>
           <div className="d-flex text-white align-items-center">
@@ -25,7 +25,7 @@ const Navbar = () => {
             ) : (
               <button
                 className="ms-2 btn btn-outline-light"
-                onClick={() => navigate("/login")}
+                onClick={() => navigate("Firebase-Movie-App/login")}
               >
                 Login
               </button>
@@ -40,7 +40,7 @@ const Navbar = () => {
             ) : (
               <button
                 className="ms-2 btn btn-outline-light"
-                onClick={() => navigate("/register")}
+                onClick={() => navigate("Firebase-Movie-App/register")}
               >
                 Register
               </button>
