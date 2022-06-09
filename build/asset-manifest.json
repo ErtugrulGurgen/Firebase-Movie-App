@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Firebase-Movie-App/static/css/main.48774e25.css",
+    "main.js": "/Firebase-Movie-App/static/js/main.f05a5536.js",
+    "static/js/787.a010e42e.chunk.js": "/Firebase-Movie-App/static/js/787.a010e42e.chunk.js",
+    "index.html": "/Firebase-Movie-App/index.html",
+    "main.48774e25.css.map": "/Firebase-Movie-App/static/css/main.48774e25.css.map",
+    "main.f05a5536.js.map": "/Firebase-Movie-App/static/js/main.f05a5536.js.map",
+    "787.a010e42e.chunk.js.map": "/Firebase-Movie-App/static/js/787.a010e42e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48774e25.css",
+    "static/js/main.f05a5536.js"
+  ]
+}
