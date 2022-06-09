@@ -13,10 +13,10 @@ const AppRouter = () => {
    <Router>
      <Navbar/>
     <Routes>
-      <Route path='/' element={<Main/>}/>
-      <Route path='/login' element={<Login/>}/>
-      <Route path='/register' element={<Register/>}/>
-      <Route path='/details/:id' element={<MovieDetail/>}/>
+      <Route path='Firebase-Movie-App/' element={<Main/>}/>
+      <Route path='Firebase-Movie-App//login' element={<Login/>}/>
+      <Route path='Firebase-Movie-App//register' element={<Register/>}/>
+      <Route path='Firebase-Movie-App//details/:id' element={<MovieDetail/>}/>
     </Routes>
    </Router>
     )
