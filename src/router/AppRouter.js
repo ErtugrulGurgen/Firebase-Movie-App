@@ -14,9 +14,9 @@ const AppRouter = () => {
      <Navbar/>
     <Routes>
       <Route path='Firebase-Movie-App/' element={<Main/>}/>
-      <Route path='Firebase-Movie-App//login' element={<Login/>}/>
-      <Route path='Firebase-Movie-App//register' element={<Register/>}/>
-      <Route path='Firebase-Movie-App//details/:id' element={<MovieDetail/>}/>
+      <Route path='Firebase-Movie-App/login' element={<Login/>}/>
+      <Route path='Firebase-Movie-App/register' element={<Register/>}/>
+      <Route path='Firebase-Movie-App/details/:id' element={<MovieDetail/>}/>
     </Routes>
    </Router>
     )
