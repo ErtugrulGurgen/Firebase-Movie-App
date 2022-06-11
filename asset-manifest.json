@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Firebase-Movie-App/static/css/main.48774e25.css",
-    "main.js": "/Firebase-Movie-App/static/js/main.c0857ba6.js",
+    "main.js": "/Firebase-Movie-App/static/js/main.b12f8485.js",
     "static/js/787.a010e42e.chunk.js": "/Firebase-Movie-App/static/js/787.a010e42e.chunk.js",
     "index.html": "/Firebase-Movie-App/index.html",
     "main.48774e25.css.map": "/Firebase-Movie-App/static/css/main.48774e25.css.map",
-    "main.c0857ba6.js.map": "/Firebase-Movie-App/static/js/main.c0857ba6.js.map",
+    "main.b12f8485.js.map": "/Firebase-Movie-App/static/js/main.b12f8485.js.map",
     "787.a010e42e.chunk.js.map": "/Firebase-Movie-App/static/js/787.a010e42e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48774e25.css",
-    "static/js/main.c0857ba6.js"
+    "static/js/main.b12f8485.js"
   ]
 }
