@@ -12,12 +12,13 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_apiKey,
-  authDomain: process.env.REACT_APP_authDomain,
-  projectId: process.env.REACT_APP_projectId,
-  storageBucket: process.env.REACT_APP_storageBucket,
-  messagingSenderId: process.env.REACT_APP_messagingSenderId,
-  appId: process.env.REACT_APP_appId,
+apiKey:"AIzaSyBhhUVGtz3MaHIfFWEpEumxTzW_A1veTzo",
+authDomain:"movie-app-859ac.firebaseapp.com",
+projectId:"movie-app-859ac",
+storageBucket:"movie-app-859ac.appspot.com",
+messagingSenderId:"390579391003",
+appId:"1:390579391003:web:f139bb306cb8d66dc586be",
+TMDB_KEY:"a4a9319d6b9070aa20b69397bf27f173",
 };
 
 const app = initializeApp(firebaseConfig);
@@ -35,7 +36,7 @@ export const createUser = async (email, password, navigate, displayName) => {
     {
       displayName: displayName,
     });
-    navigate("Firebase-Movie-App/");
+    navigate("/Firebase-Movie-App/");
   } catch (err) {
     alert(err.message);
   }
@@ -45,7 +46,7 @@ export const signInUser = async (email, password, navigate) => {
   try {
     let signIn = await signInWithEmailAndPassword(auth, email, password);
     console.log(signIn);
-    navigate("Firebase-Movie-App/");
+    navigate("/Firebase-Movie-App/");
   } catch (err) {
     alert(err.message);
   }
@@ -69,7 +70,7 @@ export const signUpProvider = (navigate) => {
   signInWithPopup(auth, provider)
   .then((result) => {
     console.log(result);
-    navigate("Firebase-Movie-App/");
+    navigate("/Firebase-Movie-App/");
   }).catch((error) => {
    alert(error.message);
   });
