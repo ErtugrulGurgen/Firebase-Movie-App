@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signOutUser } from "../auth/firebase";
 import { AuthContext } from "../context/AuthContext";
 
@@ -14,7 +13,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <Link to={"Firebase-Movie-App/"} className="navbar-brand text-white">
+          <Link to={"/Firebase-Movie-App/"} className="navbar-brand text-white">
             <h4>React Movie App</h4>
           </Link>
           <div className="d-flex text-white align-items-center">
@@ -25,7 +24,7 @@ const Navbar = () => {
             ) : (
               <button
                 className="ms-2 btn btn-outline-light"
-                onClick={() => navigate("Firebase-Movie-App/login")}
+                onClick={() => navigate("/Firebase-Movie-App/login")}
               >
                 Login
               </button>
@@ -40,7 +39,7 @@ const Navbar = () => {
             ) : (
               <button
                 className="ms-2 btn btn-outline-light"
-                onClick={() => navigate("Firebase-Movie-App/register")}
+                onClick={() => navigate("/Firebase-Movie-App/register")}
               >
                 Register
               </button>

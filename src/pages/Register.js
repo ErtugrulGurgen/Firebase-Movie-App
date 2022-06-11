@@ -9,9 +9,9 @@ const Register = () => {
   const [password, setPassword] = useState();
   const navigate = useNavigate();
   const handleSubmit = (e)=>{
-    const displayName = `${firstName} ${lastName}`;
     e.preventDefault();
-    createUser(email, password, displayName, navigate);
+    createUser(email, password, navigate);
+    console.log("navigate worked")
   }
 
   return (

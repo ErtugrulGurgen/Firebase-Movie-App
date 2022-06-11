@@ -5,40 +5,36 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
-  updateProfile,
   onAuthStateChanged,
   GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
 
 const firebaseConfig = {
-apiKey:"AIzaSyBhhUVGtz3MaHIfFWEpEumxTzW_A1veTzo",
-authDomain:"movie-app-859ac.firebaseapp.com",
-projectId:"movie-app-859ac",
-storageBucket:"movie-app-859ac.appspot.com",
-messagingSenderId:"390579391003",
-appId:"1:390579391003:web:f139bb306cb8d66dc586be",
-TMDB_KEY:"a4a9319d6b9070aa20b69397bf27f173",
+apiKey: process.env.REACT_APP_apiKey,
+authDomain: process.env.REACT_APP_authDomain,
+projectId: process.env.REACT_APP_projectId,
+storageBucket: process.env.REACT_APP_storageBucket,
+messagingSenderId: process.env.REACT_APP_messagingSenderId,
+appId: process.env.REACT_APP_appId,
+TMDB_KEY: process.env.REACT_APP_TMDB_KEY,
 };
 
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
 
-export const createUser = async (email, password, navigate, displayName) => {
+export const createUser = async ( email, password, navigate) => {
   try {
     let credentials = await createUserWithEmailAndPassword(
       auth,
       email,
       password
       );
-    await updateProfile(auth.currentUser, 
-    {
-      displayName: displayName,
-    });
     navigate("/Firebase-Movie-App/");
   } catch (err) {
     alert(err.message);
+    console.log(err);
   }
 };
 
